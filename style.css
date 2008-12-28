@@ -1,0 +1,85 @@
+#name {
+	color: #000;
+	font: bold 60px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+
+#content {
+	color: #fff;
+	font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	width: 640px;
+	padding-left: 50px;
+}
+
+#twitter_update_list {
+	color: #484848;
+	font-size: 12px;
+	list-style-type: none;
+	padding-left: 0;
+	margin-bottom: 0;
+}
+
+#twitter_div {
+	background: url(bulle_twitter.png) no-repeat;
+	color: #484848;
+	width: 270px;
+	padding-left: 20px;
+	height: 70px;
+	padding-right: 15px;
+	font-size: 12px;
+	padding-top: 5px;
+	list-style-type: none;
+}
+#followtwit {
+	padding-top: 1px;
+	font-size: 10px;
+	float: right;
+}
+
+#followtwit a {
+	color: #000;
+}
+
+#followtwit a:hover {
+	background-color: #000;
+	color: #fff;
+	text-decoration: overline;
+}
+
+
+#bio {
+	font: 24px Georgia, "Times New Roman", Times, serif;
+	color: #000;
+}
+
+#bio a {
+	background-color: rgba(255,0,0,0.25);
+	color: #000;
+	text-decoration: none;
+}
+
+#bio a:hover {
+	background-color: rgba(255,0,0,0.5);
+}
+
+#list a {
+	font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	opacity: 0.5;
+	font-weight: normal;
+	font-style: normal;
+}
+
+#list a:hover {
+	font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	opacity: 1;
+	font-weight: normal;
+	font-style: normal;
+}
+
+#download {
+	font: 20px/25px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	text-shadow: #000 1px 1px 2px;
+	left: 340px;
+	list-style-type: none;
+	position: absolute;
+	top: 80px;
+}
