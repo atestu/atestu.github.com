@@ -5,7 +5,6 @@ layout: post
 title: iPhone Tech Talk Notes
 
 categories: [iphone]
-
 ---
 
 
@@ -19,7 +18,6 @@ These notes are interesting for beginners in iPhone development. You need to kno
 
 
 These are raw notes. They're quite personnal and my comments will probably be annoying for some people. If my stupid remarks upset you, please close your tab and go read the official Apple Documentation.
-
 
 
 - - -
@@ -59,7 +57,6 @@ Some people have crazy things in their docks, like Quicktime or Word. That's wei
 
 
 Effective iPhone Application Architecture Part I
-
 ===
 
 
@@ -71,7 +68,6 @@ Hilarious slide with comments like `/* no idea why this works */`, `/* pretty su
 
 
 Data Persistence
-
 --
 
 User Data : user controlled => Core Data (YES!), if not : small => XML, pLists, big => Core Data.
@@ -89,7 +85,6 @@ tmp (cleared, not backed up), NSCachesDirectory (saved, not backed up), NSDocume
 
 
 Design decisions
-
 --
 
 Make massive changes easier. use dev target to reach every version of iPhone OS. ALWAYS link against current SDK. DON'T base behaviour based on OS version.
@@ -121,7 +116,6 @@ Separation : Reuse, Reorganize.
 
 
 Memory mgmt
-
 --
 
 Not sexy, but you have to talk about it.
@@ -153,7 +147,6 @@ Core Data takes care of a lot of memory stuff.
 
 
 Application Lifecycle
-
 --
 
 Compatibility : Classname prefixes (prevent namespace collisions). Avoid underscores in method names (Apple uses them, things could get ugly).
@@ -165,9 +158,7 @@ Implement - don't call.
 handling interruptions : phone calls, SMS, notifications, etc…
 
 implement applicationWillResignActive : Pause and save.
-
 - user dismisses - applicationDidResumeActive
-
 - user accepts - applicationWillTerminate (same as pressing home button)
 
 Concurrency : performing side tasks:
@@ -185,7 +176,6 @@ Next session : concurrency and more code. I'm definitely staying.
 
 
 Effective iPhone Application Architecture Part II.
-
 ===
 
 
@@ -199,7 +189,6 @@ Basically 1 = code flow (theory) and 2 = implementation realities.
 
 
 UITableView
-
 ---
 
 composited drawing performance : it's there. Impacts the way we code.
@@ -221,7 +210,6 @@ Implement highlighted and setHighlighted. Trust UIKit to do the right thing (don
 
 
 UIImage
-
 ---
 
 Every app uses these.
@@ -239,7 +227,6 @@ Don't forget that UII is wrapping CGImage, part of Core Graphics, which provides
 
 
 NSOperation (Threading)
-
 ---
 
 Why bother? keep UI responsive and leverage idle resources (even on single core).
@@ -279,17 +266,13 @@ transfer data ownership : DO NOT share.
 
 
 Working w/ system owned view herarchies
-
 ---
 
 alternative to private APIs (we know you do it. Please stop.)
 
 override UIWindow sendEvent: => allows you to insert yourself in the event chain
-
 - call super first
-
 - look but don't touch
-
 - be quick
 
 
@@ -307,13 +290,11 @@ All, final word : READ THE FUCKING MANUAL. Know the APIs.
 Loved these two session, especially Part I. Now I know what's wrong with my code. Will start from scratch. 
 
 
-
 - - -
 
 
 
 Lunch
-
 ---
 
 Music : Phoenix (!) and trance techno. Very disturbing. Plus it's kinda loud. It's 1:20 and I only have 4 hours remaining on my battery. Oh yeah I forgot to mention : the lunch is free and so was the nice breakfast. Saving the chocolate pie (yup, you read that right) for my goûter.
@@ -321,13 +302,11 @@ Music : Phoenix (!) and trance techno. Very disturbing. Plus it's kinda loud. It
 The next session starts in 10 minutes. I'm still in room A, waiting for "Working with Core Data". Ratatat. Bloc Party. Pixies.
 
 
-
 - - - 
 
 
 
 Core Data
-
 =========
 
 There's a guy in a suit and a PC.
@@ -347,7 +326,6 @@ NSEntityDescription : blueprint for your object.
 
 
 Structuring your data is the most important step.
-
 --------------------------------------------------
 
 speed vs. space : 
@@ -367,7 +345,6 @@ No binary in the DB, except if very small (about 1k or less). ~100k images shoul
 
 
 Fetching efficiently
-
 --------------------
 
 NSFetchRequest : access saved data, flexible & powerful. Tell it what, where, and how.
@@ -405,7 +382,6 @@ sum, count, min, etc… supported natively by Cocoa. Call `countForFetchRequest`
 
 
 Integrating with UIKit
-
 ----------------------
 
 Managed Objects are just objects! Track notifications : `NSManagedObjectContextDidSaveNotification`
@@ -431,13 +407,11 @@ Threading : Core Data uses a policy of isolation : one managed object context pe
 
 
 Testing and debugging your iPhone app
-
 =======================================
 
 
 
 Finding and fixing bugs
-
 -------------------------
 
 ### Unit Testing
@@ -463,7 +437,6 @@ Tip : duplicate your Debug configuration to create an Analyze configuration.
 
 
 Using the organizer
-
 ---------------------
 
 Device management : you can download the app data from the orga. Here you can also see all the crash logs, provisioning profiles, 
@@ -471,7 +444,6 @@ Device management : you can download the app data from the orga. Here you can al
 
 
 Beta tests
-
 ------------
 
 Let others work for you (always a good thing!).
@@ -487,7 +459,6 @@ Damn that chocolate pie was good.
 
 
 Maximizing iPhone App Performance
-
 ===================================
 
 It's all about "Pimpin' you app" here. Sweet.
@@ -509,7 +480,6 @@ Simulator great for debugging memory. For graphics and timing, use the device.
 
 
 Drawing
-
 -------
 
 use built-in drawing whenever possible, take advantage of animatable view properties.
@@ -545,7 +515,6 @@ OK apparently it can be even smoother. Wow. Combine all the views into one SUPER
 
 
 Application launch
-
 --------------------
 
 Be lazy! Don't load everything on launch. Don't perform network operation in applicationDidFinishLaunching. Use small nib files.
@@ -553,7 +522,6 @@ Be lazy! Don't load everything on launch. Don't perform network operation in app
 
 
 Memory Usage
-
 --------------
 
 Virtual : it's there, but no swap file. Writeable pages stay in memory, read-only memory pages can be evicted and reloaded.
@@ -583,7 +551,6 @@ Don't ignore them : it's normal to have them, you must respond : release stuff.
 
 
 Files and data 
-
 ----------------
 
 use memory mapping for large files:
@@ -605,7 +572,6 @@ Use PNGs and Plists for structured data files
 
 
 Power and battery life
-
 ------------------------
 
 Very expensive to send data. You should combine everything in one operation.
