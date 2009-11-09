@@ -1,0 +1,19 @@
+* {
+	font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+
+body {
+	width: 600px;
+	margin-left: 20%;
+}
+
+#header h1 a {
+	font-size: 50px;
+	text-decoration: none;
+	color: black;
+}
+
+#header h2 a {
+	line-height: 0px;
+	color: silver;
+}

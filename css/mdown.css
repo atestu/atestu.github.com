@@ -1,0 +1,35 @@
+blockquote {
+	margin: 20px;
+	padding-left: 20px;
+	border-left: 5px solid silver;
+}
+
+pre code {
+	padding: 10px;
+	margin: 20px;
+	background-color: #eaeaea;
+	border: 1px solid silver;
+	font-family: "Courier New", Courier, mono;
+	display: block;
+	width: 500px;
+}
+
+code {
+	background-color: #eaeaea;
+	border: 1px solid silver;
+	font-family: "Courier New", Courier, mono;
+	width: 500px;
+}
+
+a {
+	color: black;
+}
+
+a:hover {
+	color: gray;
+}
+
+a:visited {
+	color: gray;
+	text-decoration: none;
+}

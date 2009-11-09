@@ -1,0 +1,5 @@
+permalink: "/:year/:month/:title"
+lsi: false
+pygments: true
+title: "Alexandre Testu"
+url: http://atestu.github.com/
