@@ -1,4 +1,19 @@
-Name tags. Don't know what to do. Classical music in the background fades for some bad electronic crap. Everybody sit and pull out their iPhone. I'm trying Simplenote the whole day. I'll take out my MacBook if my thumbs can't keep up. 
+---
+layout: post
+title: iPhone Tech Talk Notes
+categories: [iphone]
+---
+
+
+What follows are my notes taken during the iPhone Tech Talk session in Paris in 2009. I'm a lazy person, so there is no editing for now. I'll do it later (which means I'll probably never do it, let's be honest).
+
+These notes are interesting for beginners in iPhone development. You need to know a bit about Cocoa Touch. 
+
+These are raw notes. They're quite personnal and my comments will probably be annoying for some people. If my stupid remarks upset you, please close your tab and go read the official Apple Documentation.
+
+- - -
+
+I'm wearing a name tag. Classical music in the background fades for some bad electronic crap. Everybody sit and pull out their iPhone. I'm trying Simplenote the whole day. I'll take out my MacBook if my thumbs can't keep up. 
 
 We're in room A right now for the kickoff and that's where I'm gonna stay the whole day. My God this music is bad. 
 Oh Coldplay. Much better. 
